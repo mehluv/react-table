@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { Table } from './Table';
+import App from './App'
 import registerServiceWorker from './registerServiceWorker';
+
+import { BrowserRouter } from 'react-router-dom'
 //import './style.sass';
 /*
 import {
@@ -80,12 +82,9 @@ ReactDOM.render(
 	document.getElementById("root")
 );*/
 	ReactDOM.render(
-	<div>
-	<br /><br /><br />
-	<center>
-	<Table />
-	</center>
-	</div>, 
+	<BrowserRouter>
+    <App />
+  </BrowserRouter>, 
 
 	document.getElementById('root')
 );
